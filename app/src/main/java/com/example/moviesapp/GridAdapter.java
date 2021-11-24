@@ -16,8 +16,8 @@ import java.util.ArrayList;
 public class GridAdapter extends ArrayAdapter<Movies> {
     public GridAdapter(Activity context, ArrayList<Movies> movies) {
         super(context, 0, movies);
-    }
 
+    }
         public View getView(int position, View convertView, ViewGroup parent) {
             View gridView = convertView;
             if(gridView == null){
@@ -26,17 +26,11 @@ public class GridAdapter extends ArrayAdapter<Movies> {
             }
 
             Movies movie = getItem(position);
-
-//            TextView movieYear = gridView.findViewById(R.id.list_item_text);
-//            String year = movie.getYear();
-//            movieYear.setText(year);
-//
-//            TextView category = gridView.findViewById(R.id.list_item_text2);
-//            category.setText(movie.getCategory());
-
             ImageView image = gridView.findViewById(R.id.list_image);
             image.setImageResource(movie.getImage());
 
             return gridView;
+
     }
+
 }

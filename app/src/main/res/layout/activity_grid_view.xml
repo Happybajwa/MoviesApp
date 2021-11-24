@@ -8,7 +8,5 @@
     android:numColumns="3"
     android:background="#3B4967"
     android:paddingTop="10dp"
-    tools:context=".grid_view"
-    android:animateLayoutChanges="true"
     >
 </GridView>
